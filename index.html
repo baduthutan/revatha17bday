@@ -147,6 +147,16 @@
         --bs-modal-bg: rgba(0, 0, 0, 0);
       }
 
+      /* gallery */
+      #img1{
+        transform: rotate(-14deg) !important;
+      }
+      #img2{
+        transform: rotate(14deg) !important;
+      }
+      #img6{
+        transform: rotate(-14deg) !important;
+      }
       /* form */
       .wish-form button {
         background-color: #8E20BF;
@@ -200,8 +210,8 @@
           padding-top: 25%;
         }
         .timer .col-4 {
-          width: 8.8vw;
-          height: 13.3vw;
+          width: 7.3vw;
+          height: 10.7vw;
           padding-top: 3vw;
         }
 
@@ -328,23 +338,23 @@
           <img
             src="assets/slide_3/bg3_5.webp"
             alt="date title"
-            class="img-fluid img-float tw-pl-[3vw] tw-pr-[0] tw-mt-[6vw] md:tw-mt-[2vw] md:tw-pl-[0vw] md:tw-pr-[6vw]"
+            class="img-fluid img-float tw-pr-[14vw] tw-pl-[0] tw-mt-[6vw] md:tw-mt-[2vw] md:tw-pl-[3vw] md:tw-pr-[10vw]"
           />
           <div class="row timer d-flex justify-content-center tw-px-[10vw] md:tw--translate-x-[1vw] md:tw--translate-y-[6vw] md:tw-text-lg">
             <div
               class="col-4 tw-bg-[url('assets/slide_3/bg3_2.webp')]"
             >
-              <p id="day" class="tw-text-white tw-text-3xl md:tw-text-5xl">00</p>
+              <p id="day" class="tw-text-white tw-text-3xl md:tw-text-4xl">00</p>
             </div>
             <div
               class="col-4 mx-4  tw-bg-[url('assets/slide_3/bg3_3.webp')]"
             >
-              <p id="hrs" class="tw-text-white tw-text-3xl md:tw-text-5xl">00</p>
+              <p id="hrs" class="tw-text-white tw-text-3xl md:tw-text-4xl">00</p>
             </div>
             <div
               class="col-4 tw-bg-[url('assets/slide_3/bg3_4.webp')]"
             >
-              <p id="min" class="tw-text-white tw-text-3xl md:tw-text-5xl">00</p>
+              <p id="min" class="tw-text-white tw-text-3xl md:tw-text-4xl">00</p>
             </div>
           </div>
         </div>
@@ -407,7 +417,7 @@
     </div>
     <!-- break -->
     <div
-      class="bg tw-bg-[url('assets/slide_6/bg6_c.webp')] md:tw-bg-[url('assets/desktop/bg6_ds.webp')] md:tw-pt-[60%]"
+      class="bg tw-bg-[url('assets/slide_6/bg6.webp')] md:tw-bg-[url('assets/desktop/bg6_ds.webp')] md:tw-pt-[56%]"
       id="6"
     >
       <section class="tw-text-center tw-top-[5%] tw-px-[1vw] md:tw-px-[5vw] md:tw-top-[8%] md:tw-grid md:tw-grid-cols-2">
@@ -421,33 +431,36 @@
             <img
               src="assets/slide_6/bg6_2.webp"
               alt="gallery img 3"
-              class="img-fluid img-float md:tw-pr-[0.5vw]"
+              class="img-fluid img-float tw-pl-[4vw] tw-pr-[5vw] md:tw-pl-[2.5vw] md:tw-pr-[0.8vw]"
               data-bs-toggle="modal"
               data-bs-target="#myModal"
-              onclick="act4()"
+              onclick="act1()"
+              id="img1"
             />
             <img
               src="assets/slide_6/bg6_3.webp"
               alt="gallery img 3"
-              class="img-fluid img-float md:tw-pl-[0.8vw]"
+              class="img-fluid img-float tw-pl-[4vw] tw-pr-[4vw] md:tw-pr-[1vw] md:tw-pl-[2.5vw]"
               data-bs-toggle="modal"
               data-bs-target="#myModal"
               onclick="act2()"
+              id="img2"
             />
           </div>
           <img
-              src="assets/slide_6/bg6_4.webp"
-              alt="gallery img 3"
-              class="img-fluid img-float tw-px-[34vw] tw--mt-[16.5vw] md:tw-pl-[17vw] md:tw-pr-[16vw] md:tw--mt-[7.3vw]"
-              data-bs-toggle="modal"
-              data-bs-target="#myModal"
-              onclick="act2()"
-            />
-          <div class="tw-grid tw-grid-cols-2 tw-gap-[21vw] tw-px-[5vw] tw--mt-[9.5vw] md:tw-px-[4.2vw] md:tw--mt-[3.8vw] md:tw-gap-[5.8vw]">
+            src="assets/slide_6/bg6_4.webp"
+            alt="gallery img 3"
+            class="img-fluid img-float tw-w-[30vw] tw--mt-[13.5vw] md:tw-ml-[2vw] md:tw-w-[11vw] md:tw--mt-[6vw]"
+            data-bs-toggle="modal"
+            data-bs-target="#myModal"
+            onclick="act3()"
+          />
+
+          <div class="tw-grid tw-grid-cols-2 tw-gap-[21vw] tw-px-[5vw] tw--mt-[9.5vw] md:tw-px-[4.8vw] md:tw--mt-[3.8vw] md:tw-gap-[5.4vw]">
             <img
               src="assets/slide_6/bg6_5.webp"
               alt="gallery img 3"
-              class="img-fluid img-float md:tw-pr-[1.2vw]"
+              class="img-fluid img-float  md:tw-pl-[1.5vw] md:tw-pr-[0.5vw]"
               data-bs-toggle="modal"
               data-bs-target="#myModal"
               onclick="act4()"
@@ -458,16 +471,18 @@
               class="img-fluid img-float md:tw-pl-[1.5vw]"
               data-bs-toggle="modal"
               data-bs-target="#myModal"
-              onclick="act2()"
+              onclick="act5()"
+             
             />
           </div>
           <img
           src="assets/slide_6/bg6_7.webp"
           alt="gallery img 3"
-          class="img-fluid img-float tw-pl-[33vw] tw-pr-[30vw] tw--mt-[22vw] md:tw-pl-[16vw] md:tw-pr-[14vw] md:tw--mt-[9.5vw]"
+          class="img-fluid img-float tw-w-[30vw] tw--mt-[20vw] md:tw-ml-[2vw] md:tw-w-[11vw] md:tw--mt-[8vw]"
           data-bs-toggle="modal"
           data-bs-target="#myModal"
-          onclick="act2()"
+          onclick="act6()"
+          id="img6"
         />
         </div>
       <div>
@@ -616,13 +631,48 @@
         <div class="modal-content">
           <div class="carousel slide" id="carouselExample">
             <div class="carousel-inner">
-              <!-- <div class="carousel-item active px-4" id="act1">
+              <div class="carousel-item active px-4" id="act1">
                 <img
                   src="assets/slide_6/foto1.webp"
                   class="d-block w-100"
                   alt="..."
                 />
-              </div> -->
+              </div>
+              <div class="carousel-item active px-4" id="act2">
+                <img
+                  src="assets/slide_6/foto2.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item active px-4" id="act3">
+                <img
+                  src="assets/slide_6/foto3.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item active px-4" id="act4">
+                <img
+                  src="assets/slide_6/foto4.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item active px-4" id="act5">
+                <img
+                  src="assets/slide_6/foto5.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item active px-4" id="act6">
+                <img
+                  src="assets/slide_6/foto6.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
             </div>
             <button
               class="carousel-control-prev"
@@ -792,6 +842,14 @@
       function act4() {
         $(".carousel-item").removeClass("active");
         $("#act4").addClass("active");
+      }
+      function act5() {
+        $(".carousel-item").removeClass("active");
+        $("#act5").addClass("active");
+      }
+      function act6() {
+        $(".carousel-item").removeClass("active");
+        $("#act6").addClass("active");
       }
       // Audio control functionality
       let audioElement = document.getElementById("myAudio");
